@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 10px;
+}
+.container{
+    width: 100%;
+    max-width: 93rem;
+    margin:0px auto
+}
+body{
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    height: 100vh;
+    background-image: url(../img/first-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top center;
+    padding-top: 3rem;
+    
+    color:#fff;
+}
+.heder{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11rem;
+}
+.navigation__link{
+    text-decoration:none;
+    font-size: 14px;
+    font-weight: 700;
+    color:#fff;
+    margin-left: 4.2rem;
+    text-transform: uppercase;
+}
+.hero{
+    text-align: center;
+}
+.hero_subtitle{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 5.1rem;
+    text-transform: uppercase;
+}
+.hero_title{
+    font-size: 75px;
+    font-weight: 400;
+    margin-bottom: 5.9rem;
+    text-transform: uppercase;
+}
+.btn{
+    padding: 2rem 5.2rem;
+    background-color: #fed136;
+    color:#484543;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* servise */
+section#servise{
+    padding-top: 11rem;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 75px;
+    color: #222222;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.section-subtitle{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777777;
+    margin-bottom: 7.7rem;
+}
+.servise-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+.servise-item{
+    text-align: center;
+    max-width: 24.8rem;
+}
+.servise__img{
+    margin-bottom: 2.4rem;
+}
+.servise__title{
+    margin-bottom: 1.8rem;
+    font-size: 18px;
+    font-weight: 400;
+    color: #222222;;
+}
+.servise__discription{
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+}
+/* Portfolio */
+.portfolio-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13.4rem;
+}
+.portfolio__item{
+   
+    max-width: 29.1rem;
+    margin-bottom: 20px;
+}
+.coment-box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+.coment-item{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9.1rem;
+    width: 100%;
+    max-width: 55.3rem;
+}
+.coment_title{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+}
+.coment_discription{
+    max-width:28rem;
+    font-size: 14px;
+    font-weight: 400;
+    color:#77777777;
+}
+.coment-item:nth-child(odd){
+    flex-direction: row-reverse;
+    align-self: flex-start;
+    
+}
+.coment-item:last-child{
+    margin-bottom: 11.7rem;
+}
+.foter-text{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 8rem;
+}
+@media (max-width:936px){
+    .heder{
+        justify-content: space-evenly;
+    }
+    .hero_title{
+        font-size: 5rem}
+     .hero_subtitle{
+        font-size: 3.5rem;
+     }
+    .navigation__link{
+        margin-left: 1.4rem;
+    }
+    .servise-box{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+    }
+    .servise-item{
+        margin-bottom: 40px;
+    }
+    .portfolio-box{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+   
+}
+@media(max-width:580px){
+    .hero_title{
+        font-size: 3.5rem}
+     .hero_subtitle{
+        font-size: 2rem;
+     }
+     .coment_img{
+         display: none;
+     }
+     .coment_discription{
+         max-width: 100%;
+     }
+     .coment-item{
+         padding: 0px 20px;
+     }
+}
